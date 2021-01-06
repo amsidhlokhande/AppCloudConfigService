@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class AppCloudConfigServiceApplicationTests {
 
 	@org.junit.jupiter.api.Test
+	//@org.junit.Test
 	public void contextLoads() {
 	}
 
