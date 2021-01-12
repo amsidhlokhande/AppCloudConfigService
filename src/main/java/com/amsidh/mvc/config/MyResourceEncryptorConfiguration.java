@@ -1,14 +1,16 @@
 package com.amsidh.mvc.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.bootstrap.TextEncryptorConfigBootstrapper;
-import org.springframework.cloud.config.server.encryption.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.crypto.encrypt.TextEncryptor;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.config.server.encryption.CipherResourceJsonEncryptor;
+import org.springframework.cloud.config.server.encryption.CipherResourcePropertiesEncryptor;
+import org.springframework.cloud.config.server.encryption.CipherResourceYamlEncryptor;
+import org.springframework.cloud.config.server.encryption.ResourceEncryptor;
+import org.springframework.cloud.config.server.encryption.TextEncryptorLocator;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MyResourceEncryptorConfiguration {
